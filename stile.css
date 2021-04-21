@@ -1,5 +1,7 @@
 html,
 body {
+	
+	
 	margin-left: 10px;
 	padding: 0;
 	width: 100%;
@@ -306,34 +308,38 @@ h6 {
 }
 
 .project1 {
-	background: url(https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_960_720.jpg)
+	
+	background: url(http://www.galganogroup.com/wp-content/uploads/2017/02/problemsolving.jpg)
 		no-repeat 30% 30%;
 	background-size: contain;
+	
 }
 
 .project1::after {
-	content: "Programmazione";
+	content: "Problem Solving";
 	font-family: "Roboto Mono";
-	font-size: 36px;
+	font-size: 30px;
 	position: relative;
 	color: #fff;
 	display: block;
-	top: 8%;
+	top: 20%;
 	left: -60%;
 	right: 0;
 	bottom: 0;
 }
 
+
 .project2 {
-	background: url(http://www.galganogroup.com/wp-content/uploads/2017/02/problemsolving.jpg)
-		no-repeat 50% 50%;
+	background: url(https://www.neuragate.it/wp-content/uploads/2020/04/come-programmare.jpeg)
+		no-repeat 30% 30%;
 	background-size: contain;
+	margin-right: 50px;
 }
 
 .project2::after {
-	content: "Problem solving";
+	content: "Programmazione";
 	font-family: "Roboto Mono";
-	font-size: 36px;
+	font-size: 30px;
 	position: relative;
 	color: #fff;
 	display: block;
@@ -344,7 +350,7 @@ h6 {
 }
 
 .project3 {
-	background: url(https://bologna.unicusano.it/wp-content/uploads/2017/12/team-working.jpg)
+	background: url(https://www.corriere.it/methode_image/2020/03/12/Economia/Foto%20Economia%20-%20Trattate/dreamstime_s_113807824-k8fH-U31701270908434j7C-593x443@Corriere-Web-Sezioni.jpg)
 		no-repeat 50% 50%;
 	background-size: contain;
 }
@@ -352,12 +358,12 @@ h6 {
 .project3::after {
 	content: "Team Work";
 	font-family: "Roboto Mono";
-	font-size: 36px;
+	font-size: 30px;
 	position: relative;
 	color: #fff;
 	display: block;
-	top: 80%;
-	left: -50%;
+	top: 20%;
+	left: -40%;
 	right: 0;
 	bottom: 0;
 }
@@ -375,7 +381,8 @@ h6 {
 	.project1::after,
 	.project2::after,
 	.project3::after,
-	.project4::after {
+	.project4::after
+	{
 		display: none;
 	}
 }
