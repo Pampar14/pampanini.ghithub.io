@@ -337,7 +337,7 @@ h6 {
 }
 
 .project2::after {
-	content: "Programmazione";
+	content: "Programming";
 	font-family: "Roboto Mono";
 	font-size: 30px;
 	position: relative;
@@ -599,5 +599,11 @@ textarea:focus {
 
 .next p {
 	text-align: right;
+}
+span{
+	font-family:"Candara" ;
+}
+h4{
+	font-family:"Candara" ;
 }
 /*Last line*/
