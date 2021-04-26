@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Riccardo Pampanini| Junior Developer</title>
-	<link rel="icon" href="https://cdn0.iconfinder.com/data/icons/huge-basic-icons-part-3/512/Java.png" type="image/png" />
+<link rel="icon" href="https://cdn0.iconfinder.com/data/icons/huge-basic-icons-part-3/512/Java.png" type="image/png" />
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
@@ -10,6 +10,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <link href="stile.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
 	<div class="wrapper">
@@ -41,7 +42,7 @@
 		<h4 class="line anim-typewriter" >Who I am (?)</h4>
 		<span>Viaggiatore, amante dei dettagli, curioso</span> <br>
 		<span>Credo che ognuno di noi abbia un potenziale. Sta a ciascuno di noi essere in grado di saperlo esprimere.
-			E questo processo deve passare anche attraverso gli altri:	i nostri compampagni, i nostri colleghi, i nostri cari.</span>
+			E questo processo deve passare anche attraverso gli altri:	i nostri compagni, i nostri colleghi, i nostri cari.</span>
 		
 
 		<div class="scroll-down"></div>
@@ -81,7 +82,7 @@
 
 				<div class="col-lg-4 project project3 wow fadeInUp"></div>
 
-				<div class="col-lg-1"></div>
+				<div class="col-lg-7"></div>
 			</div>
 			<h6>Photos are not aligned, had you seen?</h6>
 			<br>
@@ -97,7 +98,8 @@
 			<br>
 			<div>
 				<img id="bigpic">
-				<span><a onclick="picture()">Click here,this is me, but is just a pic. </a></span>
+				<span id="scritta1"><a onclick="picture()">Click here,this is me, but is just a pic. </a></span><br>
+				<span id="scritta2" style="color: #0f0f0f;"><a onclick="nopic()">Ok,that's enought!</a></span>
 			</div>
 			<br>
 			<div>
@@ -155,13 +157,19 @@
 
 	<!-- greensock cdn -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-    <script type="text/javascript">
+    <script type="text/javascript" >
 
         function picture(){ 
-        var pic = "images/profile.jpg"
+        var pic = "images/Photo Pesc.jpg"
         document.getElementById('bigpic').src = pic.replace('90x90', '225x225');
         document.getElementById('bigpic').style.display='block';
+		document.getElementById("scritta1").style.color='#0f0f0f';
+		document.getElementById("scritta2").style.color="#ffffff";
         }
+		function nopic(){
+		document.getElementById('bigpic').style.maxHeight="0px";
+		document.getElementById("scritta2").style.color='#0f0f0f';
+		}
 
 
     </script>
